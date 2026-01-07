@@ -130,4 +130,62 @@
   Made with ❤️ by CivoraX Team
 </p>
 
+---
+
+# SchemeAssist AI – Government Scheme Recommendation System
+
+## Project Overview
+SchemeAssist AI is an AI-driven system designed to help citizens identify
+relevant government welfare schemes based on their personal profile.
+The system analyzes user details such as income, location, and category
+to recommend suitable schemes along with clear eligibility explanations.
+
+This project focuses on practical AI behavior, structured data handling,
+and explainable recommendations rather than static information display.
+
+---
+
+## Problem Statement
+Citizens often struggle to discover and understand government schemes
+that apply to them due to scattered information and complex eligibility rules.
+SchemeAssist AI addresses this challenge by providing
+profile-based scheme recommendations in a simplified and accessible manner.
+
+---
+
+## Key Features
+- Profile-based scheme eligibility analysis  
+- AI-driven scheme scoring and ranking  
+- Explainable recommendations with reasoning  
+- Application guidance and document requirements  
+- Simple and citizen-friendly interface  
+
+---
+
+## Tech Stack
+- **Programming Language:** Python  
+- **Data Processing:** Pandas  
+- **Backend:** Flask (REST API)  
+- **Frontend:** HTML, CSS, JavaScript  
+- **Data Storage:** CSV-based structured data  
+- **Version Control:** GitHub Classroom  
+
+---
+
+## How the System Works
+1. User enters profile details through the interface  
+2. Scheme data is loaded from structured datasets  
+3. Eligibility rules and scoring logic are applied  
+4. Schemes are ranked based on relevance  
+5. Results are displayed with clear explanations  
+
+---
+
+## Future Enhancements
+- Multilingual support  
+- Advanced machine learning models  
+- Improved UI accessibility  
+
+
+
 
