@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SchemeAssist AI</title>
+</head>
+<body>
+    <h2>SchemeAssist AI – Government Scheme Recommendations</h2>
+
+    <form id="userForm">
+        <label>Age:</label><br>
+        <input type="number" id="age"><br><br>
+
+        <label>Annual Income:</label><br>
+        <input type="number" id="income"><br><br>
+
+        <label>State:</label><br>
+        <input type="text" id="state"><br><br>
+
+        <label>Category:</label><br>
+        <input type="text" id="category"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="text" id="gender"><br><br>
+
+        <button type="button" onclick="getRecommendations()">
+            Get Recommendations
+        </button>
+    </form>
+
+    <h3>Results</h3>
+    <pre id="output"></pre>
+
+    <script>
+        function getRecommendations() {
+            const data = {
+                age: parseInt(document.getElementById("age").value),
+                income: parseInt(document.getElementById("income").value),
+                state: document.getElementById("state").value,
+                category: document.getElementById("category").value,
+                gender: document.getElementById("gender").value
+            };
+
+            fetch("http://127.0.0.1:5000/recommend", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(result => {
+                document.getElementById("output").textContent =
+                    JSON.stringify(result, null, 2);
+            });
+        }
+    </script>
+</body>
+</html>
