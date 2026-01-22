@@ -31,28 +31,38 @@
     <pre id="output"></pre>
 
     <script>
-        function getRecommendations() {
-            const data = {
-                age: parseInt(document.getElementById("age").value),
-                income: parseInt(document.getElementById("income").value),
-                state: document.getElementById("state").value,
-                category: document.getElementById("category").value,
-                gender: document.getElementById("gender").value
-            };
+    function getRecommendations() {
+        const age = document.getElementById("age").value;
+        const income = document.getElementById("income").value;
+        const state = document.getElementById("state").value;
+        const category = document.getElementById("category").value;
+        const gender = document.getElementById("gender").value;
 
-            fetch("http://127.0.0.1:5000/recommend", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(result => {
-                document.getElementById("output").textContent =
-                    JSON.stringify(result, null, 2);
-            });
+        if (!age || !income || !state || !category || !gender) {
+            document.getElementById("output").textContent =
+                "Please fill in all fields before submitting.";
+            return;
         }
+
+        const data = {
+            age: parseInt(age),
+            income: parseInt(income),
+            state: state,
+            category: category,
+            gender: gender
+        };
+
+        fetch("http://127.0.0.1:5000/recommend", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            document.getElementById("output").textContent =
+                JSON.stringify(result, null, 2);
+        });
+    }
     </script>
 </body>
 </html>
