@@ -15,6 +15,12 @@ def recommend():
     user_profile = request.json
     schemes = load_schemes("data/schemes.csv")
     recommendations = recommend_schemes(user_profile, schemes)
+
+    # Generate report file
+    generate_report(
+        user_profile,
+        recommendations,
+        "reports/latest_report.txt")
     return jsonify(recommendations)
 
 if __name__ == "__main__":
