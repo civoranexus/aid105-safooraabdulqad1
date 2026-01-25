@@ -59,9 +59,15 @@
         })
         .then(response => response.json())
         .then(result => {
-            document.getElementById("output").textContent =
-                JSON.stringify(result, null, 2);
+            if (result.length === 0) {
+        document.getElementById("output").textContent =
+            "No eligible schemes found for the given profile.";
+            } else {
+        document.getElementById("output").textContent =
+            JSON.stringify(result, null, 2);
+            }
         });
+
     }
     </script>
 </body>
