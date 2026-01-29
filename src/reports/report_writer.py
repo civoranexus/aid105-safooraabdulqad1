@@ -1,7 +1,8 @@
-def write_report(user, scheme, score, reasons, path):
+def write_report(user, scheme_name, score, reasons, path):
     with open(path, "w") as f:
-        f.write(f"Scheme: {scheme['name']}\n")
+        f.write(f"Scheme: {scheme_name}\n")
         f.write(f"Score: {score}\n")
         f.write("Reasons:\n")
         for r in reasons:
             f.write(f"- {r}\n")
+
