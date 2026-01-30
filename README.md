@@ -186,3 +186,59 @@ profile-based scheme recommendations in a simplified and accessible manner.
 - Advanced machine learning models  
 - Improved UI accessibility  
 
+---
+
+## System Architecture
+
+SchemeAssist AI follows a modular and layered architecture to ensure
+clarity, maintainability, and explainability.
+
+The system is divided into the following core components:
+
+### Core Modules
+- **scheme_loader.py**  
+  Responsible for loading government scheme data from structured CSV files.
+
+- **eligibility_rules.py**  
+  Applies rule-based checks to determine whether a user qualifies for a scheme
+  based on income, location, and category.
+
+- **scoring_logic.py**  
+  Assigns a relevance score to each eligible scheme to enable prioritization.
+
+- **recommender.py**  
+  Acts as the central coordinator that combines eligibility checks,
+  scoring logic, and explanation generation to produce ranked recommendations.
+
+### Explainability Layer
+- **explanation_builder.py**  
+  Generates human-readable reasons explaining why a particular scheme
+  was recommended to the user, improving transparency and trust.
+
+### Reporting Layer
+- **report_writer.py**  
+  Produces a structured recommendation report summarizing the user profile,
+  selected scheme, score, and justification.
+
+---
+
+## Data Flow
+
+1. User profile data is defined in the application entry point.
+2. Scheme data is loaded from a CSV dataset.
+3. Each scheme is evaluated using eligibility rules.
+4. Eligible schemes are scored and ranked.
+5. Explanations are generated for recommended schemes.
+6. A final recommendation report is created and saved.
+
+---
+
+## Explainability Approach
+
+Instead of treating recommendations as black-box outputs,
+SchemeAssist AI provides clear explanations for each recommendation.
+These explanations are derived directly from eligibility conditions
+and matching user attributes, ensuring transparency and ease of understanding.
+
+
+
