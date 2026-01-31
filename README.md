@@ -182,9 +182,11 @@ profile-based scheme recommendations in a simplified and accessible manner.
 ---
 
 ## Future Enhancements
-- Multilingual support  
-- Advanced machine learning models  
-- Improved UI accessibility  
+- Integration with live government APIs for real-time scheme updates.
+- Support for additional user attributes such as gender and district-level rules.
+- Enhanced scoring using machine learning techniques.
+- Multilingual support for improved accessibility.
+- Web-based user interface for broader public use. 
 
 ---
 
@@ -239,6 +241,16 @@ Instead of treating recommendations as black-box outputs,
 SchemeAssist AI provides clear explanations for each recommendation.
 These explanations are derived directly from eligibility conditions
 and matching user attributes, ensuring transparency and ease of understanding.
+
+--- 
+
+## Limitations
+
+- Scheme data is limited to a sample dataset and does not reflect real-time government databases.
+- Eligibility rules are simplified and rule-based.
+- The system currently supports a limited set of user attributes.
+- Recommendations are generated without live policy updates.
+
 
 
 
