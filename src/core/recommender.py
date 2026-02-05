@@ -18,7 +18,10 @@ def recommend_schemes(user_profile, schemes):
                 "scheme_name": scheme.get("scheme_name"),
                 "score": score,
                 "reasons": reasons
-            })
+        })
+        else:
+            rejection_reasons = build_rejection_reasons(user_profile, scheme)
+
 
     recommendations.sort(
         key=lambda x: x["score"],
