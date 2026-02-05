@@ -130,4 +130,127 @@
   Made with ❤️ by CivoraX Team
 </p>
 
+---
+
+# SchemeAssist AI – Government Scheme Recommendation System
+
+## Project Overview
+SchemeAssist AI is an AI-driven system designed to help citizens identify
+relevant government welfare schemes based on their personal profile.
+The system analyzes user details such as income, location, and category
+to recommend suitable schemes along with clear eligibility explanations.
+
+This project focuses on practical AI behavior, structured data handling,
+and explainable recommendations rather than static information display.
+
+---
+
+## Problem Statement
+Citizens often struggle to discover and understand government schemes
+that apply to them due to scattered information and complex eligibility rules.
+SchemeAssist AI addresses this challenge by providing
+profile-based scheme recommendations in a simplified and accessible manner.
+
+---
+
+## Key Features
+- Profile-based scheme eligibility analysis  
+- AI-driven scheme scoring and ranking  
+- Explainable recommendations with reasoning  
+- Application guidance and document requirements  
+- Simple and citizen-friendly interface  
+
+---
+
+## Tech Stack
+- **Programming Language:** Python  
+- **Data Processing:** Pandas  
+- **Backend:** Flask (REST API)  
+- **Frontend:** HTML, CSS, JavaScript  
+- **Data Storage:** CSV-based structured data  
+- **Version Control:** GitHub Classroom  
+
+---
+
+## How the System Works
+1. User enters profile details through the interface  
+2. Scheme data is loaded from structured datasets  
+3. Eligibility rules and scoring logic are applied  
+4. Schemes are ranked based on relevance  
+5. Results are displayed with clear explanations  
+
+---
+
+## Future Enhancements
+- Integration with live government APIs for real-time scheme updates.
+- Support for additional user attributes such as gender and district-level rules.
+- Enhanced scoring using machine learning techniques.
+- Multilingual support for improved accessibility.
+- Web-based user interface for broader public use. 
+
+---
+
+## System Architecture
+
+SchemeAssist AI follows a modular and layered architecture to ensure
+clarity, maintainability, and explainability.
+
+The system is divided into the following core components:
+
+### Core Modules
+- **scheme_loader.py**  
+  Responsible for loading government scheme data from structured CSV files.
+
+- **eligibility_rules.py**  
+  Applies rule-based checks to determine whether a user qualifies for a scheme
+  based on income, location, and category.
+
+- **scoring_logic.py**  
+  Assigns a relevance score to each eligible scheme to enable prioritization.
+
+- **recommender.py**  
+  Acts as the central coordinator that combines eligibility checks,
+  scoring logic, and explanation generation to produce ranked recommendations.
+
+### Explainability Layer
+- **explanation_builder.py**  
+  Generates human-readable reasons explaining why a particular scheme
+  was recommended to the user, improving transparency and trust.
+
+### Reporting Layer
+- **report_writer.py**  
+  Produces a structured recommendation report summarizing the user profile,
+  selected scheme, score, and justification.
+
+---
+
+## Data Flow
+
+1. User profile data is defined in the application entry point.
+2. Scheme data is loaded from a CSV dataset.
+3. Each scheme is evaluated using eligibility rules.
+4. Eligible schemes are scored and ranked.
+5. Explanations are generated for recommended schemes.
+6. A final recommendation report is created and saved.
+
+---
+
+## Explainability Approach
+
+Instead of treating recommendations as black-box outputs,
+SchemeAssist AI provides clear explanations for each recommendation.
+These explanations are derived directly from eligibility conditions
+and matching user attributes, ensuring transparency and ease of understanding.
+
+--- 
+
+## Limitations
+
+- Scheme data is limited to a sample dataset and does not reflect real-time government databases.
+- Eligibility rules are simplified and rule-based.
+- The system currently supports a limited set of user attributes.
+- Recommendations are generated without live policy updates.
+
+
+
 
