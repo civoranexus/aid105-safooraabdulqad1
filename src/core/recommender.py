@@ -1,6 +1,7 @@
 from core.eligibility_rules import check_basic_eligibility
 from core.scoring_logic import compute_score
 from explainability.explanation_builder import build_explanation
+from explainability.rejection_reasons import build_rejection_reasons
 
 def recommend_schemes(user_profile, schemes):
     """
