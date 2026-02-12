@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from src.core.recommender import recommend_schemes
 from src.core.scheme_loader import load_schemes
@@ -14,6 +14,14 @@ CORS(app)  # Required for your index.html to communicate with the backend
 # Load data from the data folder
 
 SCHEMES_DATA = load_schemes("src/data/schemes.csv")
+
+@app.route("/")
+def home():
+    return send_from_directory("../frontend", "index.html")
+
+@app.route("/<path:path>")
+def static_files(path):
+    return send_from_directory("../frontend", path)
 
 
 @app.route("/recommend", methods=["POST"])
