@@ -1,9 +1,21 @@
-scheme_name,max_income,state,category,priority_weight,benefits
-Post Matric Scholarship,200000,Telangana,Student,5,Covers tuition fees and monthly maintenance allowance.
-PM Kisan Samman Nidhi,250000,ALL,Farmer,4,Direct benefit transfer of ₹6000 per year in three installments.
-Skill Development Grant,300000,Telangana,General,3,Free vocational training and certification for unemployed youth.
-Women Entrepreneurship Scheme,400000,ALL,Women,4,Low-interest loans up to ₹10 Lakhs for starting small businesses.
-Minority Education Support,180000,Telangana,Minority,5,Financial aid for students from minority communities.
-Arogyasri Health Scheme,500000,Telangana,General,5,Free quality healthcare for BPL families in listed hospitals.
-Old Age Pension,150000,ALL,General,4,Monthly financial support for citizens above 60 years.
-Rythu Bandhu,600000,Telangana,Farmer,5,Investment support for agriculture at ₹5000 per acre.
+scheme_name,max_income,min_age,max_age,state,gender,category,priority_weight,benefits
+National Student Scholarship,300000,16,30,ALL,ALL,Student,5,Scholarship support for undergraduate and postgraduate students.
+State Minority Grant Telangana,250000,16,35,Telangana,ALL,Minority,5,Financial support for minority students in Telangana.
+Women Entrepreneurship India,500000,21,60,ALL,Female,General,4,Subsidized loans for women entrepreneurs.
+PM Kisan Samman Nidhi,250000,18,65,ALL,ALL,Farmer,4,₹6000 per year support for registered farmers.
+Rythu Bandhu Telangana,600000,18,70,Telangana,ALL,Farmer,5,Agricultural investment support per acre.
+Old Age Pension Scheme,200000,60,120,ALL,ALL,General,4,Monthly pension for senior citizens.
+Senior Women Pension,250000,55,120,ALL,Female,General,4,Pension scheme for elderly women.
+Skill India Youth Program,400000,18,35,ALL,ALL,General,3,Free skill development programs.
+Health Protection Scheme Maharashtra,500000,0,120,Maharashtra,ALL,General,5,Free hospital treatment under state coverage.
+Delhi Youth Startup Grant,450000,21,40,Delhi,ALL,General,4,Financial grant for young entrepreneurs.
+Karnataka Minority Support,220000,18,40,Karnataka,ALL,Minority,4,Scholarship for minority students.
+UP Farmer Development Fund,300000,18,65,Uttar Pradesh,ALL,Farmer,4,Farm equipment subsidy scheme.
+Bihar Girl Child Scheme,300000,0,18,Bihar,Female,General,5,Financial support for girl child education.
+Tamil Nadu Women Welfare Scheme,400000,18,60,Tamil Nadu,Female,General,4,Women financial support scheme.
+Rajasthan Senior Citizen Benefit,200000,60,120,Rajasthan,ALL,General,4,Pension scheme for senior citizens.
+West Bengal Education Support,350000,16,30,West Bengal,ALL,Student,4,Education aid for state students.
+Andhra Pradesh Farmer Loan Waiver,500000,18,70,Andhra Pradesh,ALL,Farmer,5,Agricultural loan waiver support.
+Gujarat Health Assistance,600000,0,120,Gujarat,ALL,General,4,Medical expense assistance.
+Kerala Minority Development Scheme,250000,18,45,Kerala,ALL,Minority,4,Financial aid for minority development.
+National Women Safety Scheme,500000,18,50,ALL,Female,General,3,Women protection and support assistance.
