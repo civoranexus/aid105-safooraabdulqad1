@@ -4,6 +4,9 @@ from src.core.recommender import recommend_schemes
 from src.core.scheme_loader import load_schemes
 from src.reports.report_writer import write_report
 import os
+import sys
+#This makes Python see the project root folder
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 app = Flask(__name__)
 CORS(app)  # Required for your index.html to communicate with the backend
